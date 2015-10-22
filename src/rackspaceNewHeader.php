@@ -115,7 +115,7 @@
 	<!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="../../../rackspace-Revamp/src/components/css/newStyles.css"/>
+	<link rel="stylesheet" type="text/css" href="<?php echo "http://" . $_SERVER['SERVER_NAME']; ?>/rackspace-Revamp/src/components/css/newStyles.css"/>
   </head>
 
 
