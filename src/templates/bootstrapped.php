@@ -81,7 +81,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-md-10 centered rackconnect hidden-sm hidden-xs">
+				<div class="col-md-10 col-md-push-1 rackconnect hidden-sm hidden-xs">
 				</div>
 				<div class="col-md-10 col-md-push-1 hidden-sm hidden-xs">
 					<p class="text14"><a href="/cloud/hybrid">Hybrid Cloud</a> &mdash; Mix and match public cloud, private cloud, and dedicated servers to create your ideal environment.</p>
