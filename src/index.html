@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" ng-app="Rackspace">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Rackspace Code Test</title>
+  <!-- STYLES -->
+  <link rel="stylesheet" type="text/css" href="components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="components/css/dashboardStyles.css">
+  <link rel="stylesheet" type="text/css" href="../../rackspace-Revamp/src/componenets/css/customStyles.css">
+  
+  
+  <!-- SCRIPTS -->
+  <script type="text/javascript" src="components/angular/angular.min.js"></script>
+  <script type="text/javascript" src="components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+  <script type="text/javascript" src="components/angular-cookies/angular-cookies.min.js"></script>
+  <script type="text/javascript" src="components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <!-- Custom Scripts -->
+  <script type="text/javascript" src="js/main.js"></script>
+  
+</head>
+
+
+<body ng-controller="MasterCtrl">
+  <div id="page-wrapper" ng-class="{'open': toggle}" ng-cloak>
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar">
+        <li class="sidebar-main">
+          <a ng-click="toggleSidebar()" class="sidebarIcon">
+            Views
+            <span class="menu-icon glyphicon glyphicon-transfer"></span>
+          </a>
+        </li>
+        <li class="sidebar-title"><span>CHOOSE A VIEW</span></li>
+        <li class="sidebar-list">
+          <a href="#oldSchool">Old School</a>
+        </li>
+        <li class="sidebar-list">
+          <a href="#bootstrapped">Bootstrapped</span></a>
+        </li>
+        <li class="sidebar-list">
+          <a href ng-click="addOne = !addOne">Make a suggestion</a>
+        </li>
+        <li class="sidebar-list">
+        	<div class="addOne" ng-show="addOne" ng-controller="suggestCtrl">
+	        	<ul>
+			        <li ng-repeat="suggestion in suggestions" class="done-{{suggestion.done}}">
+			          <label><input type="checkbox" ng-model="suggestion.done">
+			          <span class="text">{{suggestion.text}}</span></label>
+			        </li>
+			    </ul>
+			    <form>
+			        <input class="add-input" placeholder="You should..." type="text" ng-model="formText" ng-model-instant />
+			        <button class="add-btn" ng-click="addSuggestion()">Add</button>
+			    </form>
+			</div>
+		</li>
+      <div class="tinyPuppy">
+	      <img class="tinyPuppy" src="img/glitch.png" alt="Glitch the awesome Heeler">
+      </div>
+      <div class="sidebar-footer">
+        <div class="col-xs-12">
+          <a href="mailto:amber.r.rucker@gmail.com?subject=Youre%20Hired!&body=Hey%20Amber,%20We%20think%20you%20rock.%20Come%20work%20here.">Click here to hire me!</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Sidebar -->
+
+    <div id="content-wrapper">
+      <div class="page-content">
+
+        <!-- Main Content -->
+        <div ui-view></div>
+        <div ui-view="oldSchool"></div>
+
+      </div><!-- End Page Content -->
+    </div><!-- End Content Wrapper -->
+  </div><!-- End Page Wrapper -->
+</body>
+</html>

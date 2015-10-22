@@ -1,0 +1,1 @@
+angular.module('Rackspace', ['ui.bootstrap', 'ui.router', 'ngCookies']);
