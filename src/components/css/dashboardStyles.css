@@ -1,0 +1,207 @@
+#page-wrapper {
+  padding-left: 70px;
+  height: 100%;
+}
+#sidebar-wrapper {
+  margin-left: -150px;
+  left: -30px;
+  width: 250px;
+  position: fixed;
+  height: 100%;
+  z-index: 999;
+  text-align:left;
+}
+#page-wrapper,
+#sidebar-wrapper {
+  transition: all .4s ease 0s;
+}
+
+#content-wrapper {
+  padding-left: 0;
+  margin-left: 0;
+  width: 100%;
+  height: auto;
+}
+@media only screen and (min-width: 561px) {
+  #page-wrapper.open {
+    padding-left: 250px;
+  }
+}
+@media only screen and (max-width: 560px) {
+  #page-wrapper.open {
+    padding-left: 70px;
+  }
+}
+#page-wrapper.open #sidebar-wrapper {
+  left: 150px;
+}
+
+#sidebar-wrapper {
+  background: #929191;
+}
+ul.sidebar .sidebar-main a,
+.sidebar-footer,
+ul.sidebar .sidebar-list a:hover,
+#page-wrapper:not(.open) ul.sidebar .sidebar-title.separator {
+  background: #9ba6a3;
+}
+ul.sidebar {
+  position: absolute;
+  width:250px;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-indent: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+ul.sidebar li a {
+  color: #faf9f4;
+  display: block;
+  float: left;
+  text-decoration: none;
+  width: 250px;
+}
+ul.sidebar .sidebar-main {
+  height: 65px;
+}
+ul.sidebar .sidebar-main a {
+  font-size: 18px;
+  line-height: 60px;
+}
+ul.sidebar .sidebar-main a:hover {
+  cursor: pointer;
+}
+ul.sidebar .sidebar-main .menu-icon {
+  float: right;
+  font-size: 18px;
+  padding-right: 28px;
+  line-height: 60px;
+}
+ul.sidebar .sidebar-title {
+  color: #faf9f4;
+  font-size: 12px;
+  height: 35px;
+  line-height: 40px;
+  text-transform: uppercase;
+  transition: all .6s ease 0s;
+}
+ul.sidebar .sidebar-list {
+  height: 40px;
+}
+ul.sidebar .sidebar-list a {
+  text-indent: 25px;
+  font-size: 15px;
+  color: #faf9f4;
+  line-height: 40px;
+}
+ul.sidebar .sidebar-list a:hover {
+  color: #faf9f4;
+  border-left: 3px solid #abe3cd;
+  text-indent: 22px;
+}
+ul.sidebar .sidebar-list a:hover .menu-icon {
+  text-indent: 25px;
+}
+ul.sidebar .sidebar-list .menu-icon {
+  float: right;
+  padding-right: 29px;
+  line-height: 40px;
+  width: 70px;
+}
+#page-wrapper:not(.open) ul.sidebar {
+  bottom: 0;
+}
+#page-wrapper:not(.open) ul.sidebar .sidebar-title {
+  display: none;
+  height: 0px;
+  text-indent: -100px;
+}
+#page-wrapper:not(.open) ul.sidebar .sidebar-title.separator {
+  display: block;
+  height: 2px;
+  margin: 13px 0;
+}
+#page-wrapper:not(.open) ul.sidebar .sidebar-list a:hover span {
+  border-left: 3px solid #abe3cd;
+  text-indent: 22px;
+}
+#page-wrapper:not(.open) .sidebar-footer {
+  display: none;
+}
+
+.addOne{
+	line-height: 1.4em;
+    padding:4% 4% 10% 4% ;
+    background: #9ba6a3;
+    width: 100%;
+}
+
+.addOne li{
+	padding:2% 0;
+}
+
+.addOne label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight:normal;
+    margin-left:18px;
+}
+.addOne label input[type='checkbox']{margin-left:-18px;}
+
+.add-input{
+	margin-top: 10%;
+    width: 65%;
+    padding: 4%;
+}
+
+.addOne button{
+	padding:4%;
+}
+
+.done-false{
+visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+
+.done-true {
+  text-decoration: line-through;
+  color: #eee;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;}
+  
+  
+  .done-true > label{
+  margin-top: -10000px;
+  transition: margin-top 0s 1s;
+}
+
+.tinyPuppy{
+	position: absolute;
+    height: 80px;
+    bottom: 16px;
+    margin-left: 6%;
+}
+.sidebar-footer {
+  position: absolute;
+  height: 40px;
+  bottom: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  transition: all .6s ease 0s;
+  text-align: center;
+}
+.sidebar-footer div a {
+  color: #faf9f4;
+  font-size: 12px;
+  line-height: 43px;
+}
+.sidebar-footer div a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}

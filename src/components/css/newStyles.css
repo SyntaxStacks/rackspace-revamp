@@ -1,0 +1,381 @@
+h1,
+.jumbotron h1 {
+    font-family: 'Titillium Web', Helvetica, Arial, sans-serif;
+    color: #333;
+    font-size: 3.6rem;
+    font-weight: 500;
+}
+h2,
+.jumbotron h2 {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 2.8rem;
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+}
+
+select {
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    max-height: 20px;
+    margin-left: 10px;
+}
+.jumbotron .button {
+    background-color: #f6b100;
+    border-radius: 0;
+    padding: 15px 24px;
+    color: #2a2a2a;
+    letter-spacing: .2rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#ceiling-wrap {
+    z-index: 2500;
+}
+
+
+
+#ceiling-wrap ul.dropdown>li>a{
+	text-transform: none;
+    background-color: #fff;
+    color: #333;
+}
+.navbar-nav>li>a,
+.navbar-nav>li>span {
+    display: inline-block !important;
+}
+.navbar,
+.navbar-fixed-top {
+    margin-bottom: 0px;
+    background-color: #fff;
+    text-align: left;
+}
+.navbar-inverse {
+    margin-top: 50px;
+    background-color: #000;
+}
+.navbar-brand {
+    background: url(https://752f77aa107738c25d93-f083e9a6295a3f0714fa019ffdca65c3.ssl.cf1.rackcdn.com/navigation/rackspace-logo-tagline-simplified.svg)no-repeat center;
+    background-size: 80%;
+    height: 60px;
+    width: 15%;
+    background-color: #c40022;
+    float: left;
+    padding: 10px 12px 9px;
+}
+.logo-mobile {
+    width: 25%;
+    height: 50px;
+}
+.ceiling-list-item,
+.navbar-nav>li.ceiling-list-item>a,
+.ceiling-list-item a {
+    color: #666;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0px 10px;
+    margin: 0px;
+    max-height: 15px;
+}
+.ceiling-list-item {
+    border-right: 1px solid #666;
+    display: block;
+    float: left;
+    padding: 0 10px;
+    margin-top: 13px;
+}
+.nav-header {
+    color: #ccc;
+    padding: 4px 20px 4px 15px;
+    text-transform: uppercase;
+}
+.dropdown-menu>li>a {
+    width: 270px;
+}
+.dropdown-menu .sub-menu {
+    left: 100%;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    display: none;
+    margin-top: -1px;
+}
+.dropdown-menu .sub-menu a {
+    display: block;
+    padding: 2%;
+}
+.dropdown-menu li:hover .sub-menu,
+.dropdown-menu li.hover_effect .sub-menu {
+    visibility: visible;
+    display:block;
+    rule: properties;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff !important;
+    text-transform: uppercase;
+}
+.dropdown:hover .dropdown-menu,
+.dropdown.hover_effect .dropdown-menu {
+    display: block;
+    background-color: #222;
+    rule: properties;
+}
+.navbar-nav>li>.dropdown-menu {
+    background-color: #222;
+    border-top: none;
+}
+.navbar-nav>li>.dropdown-menu a {
+    color: #fff;
+}
+.navbar-nav>li>.dropdown-menu a:hover,
+.navbar-nav>li>.dropdown-menu>li>.sub-menu,
+.navbar-nav>li>.dropdown-menu a.hover_effect {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0px;
+    rule: properties;
+}
+.dropdown-menu a,
+.sub-menu a {
+    color: #fff;
+}
+.dropdown-menu .sub-menu a:hover,
+.dropdown-menu .sub-menu a.hover_effect {
+    background: #777 !important;
+    text-decoration: none;
+    rule: properties;
+}
+.nav-tabs .dropdown-menu,
+.nav-pills .dropdown-menu,
+.navbar .dropdown-menu {
+    margin-top: 0;
+    vertical-align: top;
+    margin-left: -1px;
+    border-top: 0px;
+}
+.navbar .sub-menu:before {
+    border-bottom: 7px solid transparent;
+    border-left: none;
+    border-right: 7px solid rgba(0, 0, 0, 0.2);
+    border-top: 7px solid transparent;
+    left: -7px;
+    top: 10px;
+}
+.navbar .sub-menu:after {
+    border-top: 6px solid transparent;
+    border-left: none;
+    border-right: 6px solid #fff;
+    border-bottom: 6px solid transparent;
+    left: 10px;
+    top: 11px;
+    left: -6px;
+}
+
+
+.glyphicon {
+    float: right;
+    line-height: .55em;
+    font-size: .75em;
+}
+.pushPage {
+    height: 60px;
+    width: 100%;
+}
+#sidebar-wrapper{
+		z-index:9999;
+	}
+	
+	body{
+		font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+	    font-size: 1.4rem;
+	    color: #505050;
+	    text-align: center;
+	    line-height: 1.6rem;
+	    background: #2a2a2a;
+	}
+	.jumbotron{
+		height: 400px;
+		width: 100%;
+		background-image: url(https://752f77aa107738c25d93-f083e9a6295a3f0714fa019ffdca65c3.ssl.cf1.rackcdn.com/home/v8/hero-managedcloud.jpg);
+		background-position: center top;
+		padding: 0px;
+	}
+	
+	.hero{
+		margin-top:60px;
+	}
+	
+	.container-nomargin{
+	width:100% !important;
+	}
+	#home-hosting-river .rackconnect{
+	width:100% !important;
+	}
+	#home-hosting-river .monopoly-card.partner .card-top img{
+	height:auto;
+	}
+	.equal, .equal > div[class*='col-'] {  
+	display: -webkit-flex;
+	display: flex;
+	flex:1 1 auto;
+	}
+	.styleguide .monopoly-card{
+	min-height:280px;
+	}
+	.styleguide .monopoly-card .card-bottom{
+	min-height:160px;
+	}
+	.icon{
+	width:12.333333% !important;
+	padding-left:3%;
+	}
+	.styleguide .container_river.home-river-contact .border_right{
+	padding-right: 0px !important; 
+	width: 50% !important; 
+	text-align: left !important;
+	color: white;
+	}
+	.styleguide .container_river.home-river-contact i.fa-comments{
+		color:#fff;
+	}
+	.styleguide .container_river.home-river-contact i{
+		padding-right:20%;
+	}
+	.styleguide .container_river.home-river-magento{
+	max-width:none;
+	color:white;
+	text-align:center;
+	}
+	
+	#footer-wrap .rug p{
+		display:inline-block;
+	}
+	
+	#footer-wrap #fatfooter-wrap{
+		margin:0px;
+	}
+	
+	.block-menu{
+		text-align:left;
+	}
+	
+	.border-right{
+		border-right: 1px solid #666;
+		color:#fff;
+	}
+	
+	.home-river-contact{
+		text-align:left;
+	}
+	
+	.grid_break_40{
+		margin-top:40px;
+	}
+
+@media only screen and (min-width: 768px) {
+    .navbar-collapse2.collapse {
+        display: block !important;
+        height: auto !important;
+        padding-bottom: 0px;
+        overflow: visible !important;
+    }
+    .navbar-inverse {
+        margin-top: 50px;
+    }
+    
+    .dropdown-left{
+    color: #333;
+    border-top:none;
+    left:auto;
+    right:0;
+    margin-right:-20px;
+}
+
+.ceiling-list>.dropdown-left{
+	background-color: #FFF;
+}
+.ceiling-list>.dropdown-left>li>a{
+	color:#333;
+}
+}
+@media only screen and (max-width: 768px) {
+    ul.dropdown-menu, ul.sub-menu{
+       position: relative !important;
+        float: none !important;
+        width: 100% !important;
+    }
+    .navbar-nav>li>.dropdown-menu>li:hover>.sub-menu, .navbar-nav>li>.dropdown-menu>li.hover_effect>.sub-menu{
+	    display:block;
+        visibility:visible;
+        left:0px;
+        padding:0px;
+    }
+    .navbar-nav>li>.dropdown-menu>li>.sub-menu{
+	    display:none;
+	    visibility:hidden;
+    }
+    .dropdown-menu li:hover .sub-menu,
+	.dropdown-menu li.hover_effect .sub-menu{
+		display:block;
+	}
+    h1,
+    .jumbotron h1 {
+        font-size: 2em !important;
+    }
+    .jumbotron .button {
+        font-size: 1em !important;
+    }
+    .jumbotron h2 {
+        font-size: 1em !important;
+        line-height: 2rem !important;
+    }
+    .homepage {
+        margin-top: 0px !important;
+    }
+    .styleguide .monopoly-card {
+        min-height: 135px !important;
+    }
+    .navbar-header-right {
+        float: right;
+    }
+    .button-mobile-menu {
+        float: left;
+    }
+    .icon {
+        width: 25% !important;
+    }
+    .styleguide .monopoly-card .card-bottom {
+        min-height: 70px !important;
+    }
+    .logo-mobile {
+        width: 40% !important;
+    }
+}
+@media only screen and (max-width: 988px) {
+    .centered-sm {
+        text-align: center !important;
+    }
+    .navbar-inverse {
+        margin-top: 0px !important;
+    }
+    .nav>li>a {
+        padding: 10px !important;
+    }
+    .pushPage {
+        display: none !important;
+    }
+    .jumbotron {
+        height: 350px !important;
+        background-image: url(img/hero-managedcloudMobile.jpg) !important;
+        background-position: center bottom !important;
+    }
+    .card-bottom {
+        margin-top: 25px;
+    }
+    .no-padding-sm {
+        padding: 0px !important;
+    }
+}
