@@ -1,4 +1,4 @@
-angular.module("Rackspace", ["ui.bootstrap", "ui.router", "ngCookies"]);
+angular.module("Rackspace", ["ui.bootstrap", "ui.router", "ngCookies", "ui.sortable"]);
 "use strict";
 
 angular.module("Rackspace").config(["$stateProvider", "$urlRouterProvider", function(t, e) {
@@ -31,22 +31,37 @@ function MasterCtrl(t, e) {
 angular.module("Rackspace").controller("MasterCtrl", ["$scope", "$cookieStore", MasterCtrl]);
 
 
-
 function suggestCtrl($scope) {
   
   $scope.suggestions = [
-    {text:'Dont go to weddings when you have code tests', done:false},         
-    {text: 'Include more puppies', done:false}
+    {text:'Dont go to weddings when you have code tests', done:false, notRemoved:true},         
+    {text: 'Include more puppies', done:false, notRemoved:true}
   ];
   
-  
-  
   $scope.addSuggestion = function () {
-    $scope.suggestions.push({text:$scope.formText, done:false});
+    $scope.suggestions.push({text:$scope.formText, done:false, notRemoved:true});
     $scope.formText = '';
   };
+  
+  
+  $scope.removeSuggestion = function (index) {
+	console.log("index is:" + index);
+  	$scope.suggestions.splice(index, 1);
+  };
+  
+  $scope.class = false;
+
+	$scope.changeClass = function(){
+	  if ($scope.class === false){
+	    $scope.class = true;
+	  }else if($scope.class === true){
+	    $scope.class = false; 
+		};
+	};
 
 }
+
+
 
 
 
