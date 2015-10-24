@@ -141,6 +141,8 @@ ul.sidebar .sidebar-list .menu-icon {
 
 .addOne li{
 	padding:2% 0;
+	width: 90%;
+    margin: 3%;
 }
 
 .addOne label{
@@ -162,23 +164,35 @@ ul.sidebar .sidebar-list .menu-icon {
 }
 
 .done-false{
-visibility: visible;
-  opacity: 1;
-  transition: opacity 2s linear;
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 2s linear;
+}
+
+.active-true{
+	background: #9ba6a3;
+}
+
+.active-false{
+	background: transparent;
 }
 
 .done-true {
   text-decoration: line-through;
   color: #eee;
+/*
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s 2s, opacity 2s linear;}
+  transition: visibility 0s 2s, opacity 2s linear;
+*/}
   
   
-  .done-true > label{
+/*
+.done-true > label{
   margin-top: -10000px;
   transition: margin-top 0s 1s;
 }
+*/
 
 .tinyPuppy{
 	position: absolute;
