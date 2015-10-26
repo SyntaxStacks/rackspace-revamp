@@ -1,3 +1,12 @@
+body{
+	font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+    font-size: 1.4rem;
+    color: #505050;
+    text-align: center;
+    line-height: 1.6rem;
+    background: #2a2a2a;
+}
+
 h1,
 .jumbotron h1 {
     font-family: 'Titillium Web', Helvetica, Arial, sans-serif;
@@ -20,6 +29,26 @@ select {
     max-height: 20px;
     margin-left: 10px;
 }
+.pushPage {
+    height: 60px;
+    width: 100%;
+}
+#sidebar-wrapper{
+	z-index:9999;
+}
+
+.container-nomargin{
+	width:100% !important;
+}
+
+.jumbotron{
+	height: 400px;
+	width: 100%;
+	background-image: url(https://752f77aa107738c25d93-f083e9a6295a3f0714fa019ffdca65c3.ssl.cf1.rackcdn.com/home/v8/hero-managedcloud.jpg);
+	background-position: center top;
+	padding: 0px;
+}
+
 .jumbotron .button {
     background-color: #f6b100;
     border-radius: 0;
@@ -30,11 +59,14 @@ select {
     font-weight: 700;
     text-transform: uppercase;
 }
+
+.hero{
+	margin-top:60px;
+}
+
 #ceiling-wrap {
     z-index: 2500;
 }
-
-
 
 #ceiling-wrap ul.dropdown>li>a{
 	text-transform: none;
@@ -58,7 +90,7 @@ select {
 .navbar-brand {
     background: url(https://752f77aa107738c25d93-f083e9a6295a3f0714fa019ffdca65c3.ssl.cf1.rackcdn.com/navigation/rackspace-logo-tagline-simplified.svg)no-repeat center;
     background-size: 80%;
-    height: 60px;
+    height: 50px;
     width: 15%;
     background-color: #c40022;
     float: left;
@@ -174,106 +206,74 @@ select {
     left: -6px;
 }
 
-
 .glyphicon {
     float: right;
     line-height: .55em;
     font-size: .75em;
 }
-.pushPage {
-    height: 60px;
-    width: 100%;
+#home-hosting-river .rackconnect{
+	width:100% !important;
 }
-#sidebar-wrapper{
-		z-index:9999;
-	}
-	
-	body{
-		font-family: 'Open Sans',Helvetica,Arial,sans-serif;
-	    font-size: 1.4rem;
-	    color: #505050;
-	    text-align: center;
-	    line-height: 1.6rem;
-	    background: #2a2a2a;
-	}
-	.jumbotron{
-		height: 400px;
-		width: 100%;
-		background-image: url(https://752f77aa107738c25d93-f083e9a6295a3f0714fa019ffdca65c3.ssl.cf1.rackcdn.com/home/v8/hero-managedcloud.jpg);
-		background-position: center top;
-		padding: 0px;
-	}
-	
-	.hero{
-		margin-top:60px;
-	}
-	
-	.container-nomargin{
-	width:100% !important;
-	}
-	#home-hosting-river .rackconnect{
-	width:100% !important;
-	}
-	#home-hosting-river .monopoly-card.partner .card-top img{
+#home-hosting-river .monopoly-card.partner .card-top img{
 	height:auto;
-	}
-	.equal, .equal > div[class*='col-'] {  
+}
+.equal, .equal > div[class*='col-'] {  
 	display: -webkit-flex;
 	display: flex;
 	flex:1 1 auto;
-	}
-	.styleguide .monopoly-card{
+}
+.styleguide .monopoly-card{
 	min-height:280px;
-	}
-	.styleguide .monopoly-card .card-bottom{
+}
+.styleguide .monopoly-card .card-bottom{
 	min-height:160px;
-	}
-	.icon{
+}
+.icon{
 	width:12.333333% !important;
 	padding-left:3%;
-	}
-	.styleguide .container_river.home-river-contact .border_right{
+}
+.styleguide .container_river.home-river-contact .border_right{
 	padding-right: 0px !important; 
 	width: 50% !important; 
 	text-align: left !important;
 	color: white;
-	}
-	.styleguide .container_river.home-river-contact i.fa-comments{
-		color:#fff;
-	}
-	.styleguide .container_river.home-river-contact i{
-		padding-right:20%;
-	}
-	.styleguide .container_river.home-river-magento{
+}
+.styleguide .container_river.home-river-contact i.fa-comments{
+	color:#fff;
+}
+.styleguide .container_river.home-river-contact i{
+	padding-right:20%;
+}
+.styleguide .container_river.home-river-magento{
 	max-width:none;
 	color:white;
 	text-align:center;
-	}
-	
-	#footer-wrap .rug p{
-		display:inline-block;
-	}
-	
-	#footer-wrap #fatfooter-wrap{
-		margin:0px;
-	}
-	
-	.block-menu{
-		text-align:left;
-	}
-	
-	.border-right{
-		border-right: 1px solid #666;
-		color:#fff;
-	}
-	
-	.home-river-contact{
-		text-align:left;
-	}
-	
-	.grid_break_40{
-		margin-top:40px;
-	}
+}
+
+#footer-wrap .rug p{
+	display:inline-block;
+}
+
+#footer-wrap #fatfooter-wrap{
+	margin:0px;
+}
+
+.block-menu{
+	text-align:left;
+}
+
+.border-right{
+	border-right: 1px solid #666;
+	color:#fff;
+}
+
+.home-river-contact{
+	text-align:left;
+}
+
+.grid_break_40{
+	margin-top:40px;
+}
 
 @media only screen and (min-width: 768px) {
     .navbar-collapse2.collapse {
@@ -282,30 +282,40 @@ select {
         padding-bottom: 0px;
         overflow: visible !important;
     }
+    
     .navbar-inverse {
         margin-top: 50px;
     }
     
     .dropdown-left{
-    color: #333;
-    border-top:none;
-    left:auto;
-    right:0;
-    margin-right:-20px;
-}
-
-.ceiling-list>.dropdown-left{
-	background-color: #FFF;
-}
-.ceiling-list>.dropdown-left>li>a{
-	color:#333;
-}
+	    color: #333;
+	    border-top:none;
+	    left:auto;
+	    right:0;
+	    margin-right:-20px;
+	}
+	
+	.ceiling-list>.dropdown-left{
+		background-color: #FFF;
+	}
+	.ceiling-list>.dropdown-left>li>a{
+		color:#333;
+	}
 }
 @media only screen and (max-width: 768px) {
-    ul.dropdown-menu, ul.sub-menu{
+    ul.dropdown-menu{
        position: relative !important;
-        float: none !important;
-        width: 100% !important;
+       float: none !important;
+       width: 100% !important;
+    }
+    ul.sub-menu{
+	    display:none !important;
+    }
+    ul.dropdown-menu>li>a>span{
+	    display:none;
+    }
+    .navbar-nav>li>.dropdown-menu a:hover{
+	    width:100%;
     }
     .navbar-nav>li>.dropdown-menu>li:hover>.sub-menu, .navbar-nav>li>.dropdown-menu>li.hover_effect>.sub-menu{
 	    display:block;

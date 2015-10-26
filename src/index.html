@@ -10,7 +10,6 @@
   <link rel="stylesheet" type="text/css" href="components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="components/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="components/css/dashboardStyles.css">
-  <link rel="stylesheet" type="text/css" href="../../rackspace-Revamp/src/components/css/customStyles.css">
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css">
   
   
@@ -47,7 +46,8 @@
           <a href="#oldSchool">Old School</a>
         </li>
         <li class="sidebar-list">
-          <a href="#bootstrapped">Bootstrapped</span></a>
+          <a href="#bootstrapped" ng-click="full = !full">Bootstrapped</a>
+          <a href="../src/templates/bootstrapped.php" class="small" ng-show="full">View Bootstrap Fullscreen</a>
         </li>
         <li class="sidebar-list">
           <a href ng-click="addOne = !addOne">Make a suggestion</a>
@@ -56,13 +56,7 @@
         	<div class="addOne" ng-show="addOne" ng-controller="suggestCtrl">
 	        	<ul ui-sortable="sortableOptions" ng-model="suggestions" class="list-sort">
 		        	<li ng-repeat="suggestion in suggestions" class="done-{{suggestion.done}}">
-			        	<div class="row">
-				        	<style>
-					        	.no-margin{
-						        	margin:0px !important;
-						        	padding:0px !important;
-					        	}
-					        </style>							
+			        	<div class="row">							
 				        	<div class="col-xs-1 no-margin">
 								<span style="float:left;margin-left:-16px;margin-top: 1px;">{{$index + 1}}.</span>
 				        	</div>
@@ -97,9 +91,11 @@
 	      <img class="tinyPuppy" src="img/glitch.png" alt="Glitch the awesome Heeler">
       </div>
       <div class="sidebar-footer">
-        <div class="col-xs-12">
-          <a href="mailto:amber.r.rucker@gmail.com?subject=Youre%20Hired!&body=Hey%20Amber,%20We%20think%20you%20rock.%20Come%20work%20here.">Click here to hire me!</a>
-        </div>
+	      <div class="row">
+	        <div class="col-xs-12">
+	          <a href="mailto:amber.r.rucker@gmail.com?subject=Youre%20Hired!&body=Hey%20Amber,%20We%20think%20you%20rock.%20Come%20work%20here.">Click here to hire me!</a>
+	        </div>
+	      </div>
       </div>
     </div>
     <!-- End Sidebar -->

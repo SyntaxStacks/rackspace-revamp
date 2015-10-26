@@ -31,6 +31,17 @@ function MasterCtrl(t, e) {
 angular.module("Rackspace").controller("MasterCtrl", ["$scope", "$cookieStore", MasterCtrl]);
 
 
+/*
+function FullScreenCtrl($scope, $timeout, $modal){
+  $timeout(function(){
+	$modal.open({     
+  templateUrl: '../src/templates/bootstrapped.php',      
+});
+});
+};
+*/
+
+
 function suggestCtrl($scope) {
   
   $scope.suggestions = [

@@ -22,6 +22,11 @@
   width: 100%;
   height: auto;
 }
+.fullscreenIcon{
+	float:none !important;
+	display:inline !important;
+	width:20px !important;
+}
 @media only screen and (min-width: 561px) {
   #page-wrapper.open {
     padding-left: 250px;
@@ -145,6 +150,11 @@ ul.sidebar .sidebar-list .menu-icon {
     margin: 3%;
 }
 
+.no-margin{
+	margin:0px !important;
+	padding:0px !important;
+}
+
 .addOne label{
     display: block;
     margin-bottom: 5px;
@@ -169,30 +179,16 @@ ul.sidebar .sidebar-list .menu-icon {
 	transition: opacity 2s linear;
 }
 
-.active-true{
-	background: #9ba6a3;
-}
-
-.active-false{
-	background: transparent;
-}
-
 .done-true {
   text-decoration: line-through;
   color: #eee;
-/*
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s 2s, opacity 2s linear;
-*/}
-  
-  
-/*
-.done-true > label{
-  margin-top: -10000px;
-  transition: margin-top 0s 1s;
 }
-*/
+  
+  
+.done-true label{
+	text-decoration: line-through;
+}
+
 
 .tinyPuppy{
 	position: absolute;
